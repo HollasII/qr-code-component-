@@ -1,0 +1,65 @@
+@import "variables";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: $fonts;
+}
+
+body{
+    // padding: 50%;
+    position: relative;
+    background: map-get($colors , secondary );
+    // height: 100vh;
+
+    footer
+    {
+        position: absolute;
+        // bottom: 10px;
+        left: 30%;
+        right: 30%;
+    }
+}
+
+main{
+    background: map-get($colors , main );
+    display: flex;
+    flex-direction: column;
+    // grid-template-rows: repeat(auto-fit, mainmax(100px, 1fr));
+    // grid-template-areas:
+    // 'qr'
+    // 'text-holder';
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 35%;
+    height: 70%;
+    padding: 10px;
+    margin:  calc(2%) auto;
+    
+    img{
+        border-radius: 8px;
+        width: 70%;
+        height: 70%;
+        margin: 10px;
+    }
+
+    .text-holder{
+        h2{
+            text-align: center;
+            font-weight: 700;
+            font-size: 34px;
+            margin: 10px;
+            color: map-get($colors , third );
+        }
+
+        p{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            color: map-get($colors , second );
+            margin: 10px;
+        }
+    }
+}
